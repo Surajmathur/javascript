@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body style="background-color: black; color: white;">
+    <ul class="language">
+        <li> java script</li>
+
+    </ul>
+</body>
+<script>
+    function addlanguage(langname){
+       const li = document.createElement('li');
+       li.innerHTML = `${langname}`
+       document.querySelector('.langname').appendChild(li)
+}
+    addlanguage("python")
+    addlanguage("c++")
+
+    function optionaladdlan(oplan){
+        const li=document.createElement('li');
+        li.appendChild(document.createTextNode(oplan));
+        document.querySelector('.oplan').appendChild(li);
+
+    }
+    optionaladdlan('java')
+</script>
+
+</html>

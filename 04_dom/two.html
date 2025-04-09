@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom learning \ chail or code</title>
+</head>
+<body style="background-color: black; color: white;">
+    <div class="parent">
+        <div class="day">monday</div>
+        <div class="day">tuesday</div>
+        <div class="day">wednesday</div>
+        <div class="day">thrusday</div>
+    </div>
+    
+</body>
+<script>
+   const par= document.querySelector('.parent')
+   console.log(par)
+
+//    console.log(par.children);
+//    console.log(par.children[1]);
+//    console.log(par.children[1].innerHTML);
+
+
+//    for( let i=0; i< par.children.length; i++){
+//     console.log(par.children[i].innerHTML);
+//    }
+
+
+//    par.children[1].style.color='red'
+//    par.children[3].style.color='blue'
+
+//    console.log(par.firstElementChild);
+//    console.log(par.lastElementChild);
+
+// ========== child to parent s election ==== ya target 
+   document.querySelector('.day')
+ const dayname=  document.querySelector('.day')
+ console.log(dayname);
+ console.log(dayname.parentElement);
+ console.log(dayname.nextElementSibling);
+
+console.log("NODE", par.childNodes);
+
+</script>
